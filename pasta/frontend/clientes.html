@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/clientes.js"></script>
+</head>
+<body>
+     
+<nav>
+        <a href="index.html">Início</a>
+        <a href="login.html">Login</a>
+        <a href="usuarios.html">Usuários</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="veiculos.html">Veículos</a>
+        <a href="ordens.html">Ordens de serviço</a>
+        </nav>
+<h1>Cadastro de clintes</h1>
+<form id="formCadastro">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" required>
+    <label for="conatato"> Contato:</label>
+    <input type="text" name="conatato" id="conatato" required>
+    <label for="cpf">CPF:</label>
+    <input type="text" name="cpf" id="cpf" required>
+</form>
+<p id="mensagem" role="status"></p>
+<h2> Cadastros</h2>
+<table >
+ <thead>
+ <tr>
+     <th>Nome</th>
+     <th>Email</th>
+     <th>CPF</th>
+     <th>Ações</th>
+    </tr>
+ </thead>
+ <tbody id="listaClientes"></tbody>
+</table>
+
+</body>
+</html>
