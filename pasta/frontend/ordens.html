@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de ordens</title>
+</head>
+<body>
+    
+<nav>
+ <a href="index.html">Início</a>
+ <a href="login.html">Login</a>
+ <a href="usuarios.html">Usuários</a>
+ <a href="clientes.html">Clientes</a>
+ <a href="veiculos.html">Veículos</a>
+ <a href="ordens.html">Ordens de serviço</a>
+ </nav>
+
+<h1>Cadastro de ordens de serviço</h1>
+<form id="formCadastro">
+    <label for="descicao">Descrição:</label>
+    <input type="text" name="descricao" id="descricao" required>
+    <label for="data_agendada">Data agendada:</label>
+    <input type="date" name="data_agendada" id="data_agendada" required>
+    <label for="status">Status:</label>
+    <input type="text" name="status" id="status" required>
+
+    <label for="veiculo">Veículo</label>
+    <select name="id_veiculo" id="id_veiculo" required>
+        <option value="">Selecione</option>
+    </select>
+    <button value="submit" >Enviar</button>
+</form>
+
+<p id="mensagem" role="status"></p>
+<h2> Cadastros</h2>
+<table >
+ <thead>
+ <tr>
+    <th>Descrição</th>
+    <th>Data agendada</th>
+    <th>Status</th>
+     <th>Veículos Id</th>
+    <th>Ações</th>
+</tr>
+ </thead>
+ <tbody id="listaOdens"></tbody>
+</table>
+</body>
+</html>

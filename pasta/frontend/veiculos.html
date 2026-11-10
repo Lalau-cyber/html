@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de veículos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/clientes.js"></script>
+</head>
+<body>
+    
+<nav>
+    <a href="index.html">Início</a>
+    <a href="login.html">Login</a>
+    <a href="usuarios.html">Usuários</a>
+    <a href="clientes.html">Clienets</a>
+    <a href="veiculos.html">Veículos</a>
+    <a href="ordens.html">Ordens de serviço</a>
+</nav>
+
+<h1>Cadastro de veículos</h1>
+
+<form id="formCadastro">
+    <label for="placa">Placa:</label>
+    <input type="text" name="placa" id="placa" required>
+    <label for="modelo">Modelo:</label>
+    <input type="text" name="modelo" id="modelo" required>
+    <label for="ano">Ano:</label>
+    <input type="number" name="ano" id="ano" step="1" min="1" required>
+
+    <label for="id_cliente">Cliente</label>
+    <select name="id_cliente" id="id_cliente" rrequired>
+        <option value="">selecione</option>
+    </select>
+    <button type=""submit>Enviar</button>
+</form>
+
+<p id="mensagem" role="status"></p>
+  <h2>Cadastros</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Placa</th>
+        <th>Modelo</th>
+        <th>Ano</th>
+        <th>Cliente ID</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="listaVeiculos"></tbody>
+  </table>
+</body>
+</html>
+</body>
+</html>
